@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*** All page ***/
+.allPage {
+  background: linear-gradient(#b34e4b, #471f);
+  height: 100vh;
+}
+
+/*** Playground***/
+.playGround {
+  width: 80%;
+  height: 80%;
+  background: #d1ccb4;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+/*** Total score ***/
+.totalScore {
+  font-size: 30px;
+  color: #471f1e;
+  font-weight: bold;
+}
+.totalScore p:nth-last-of-type(2) {
+  font-size: 40px;
+  text-align: center;
+}
+.totalScore0 {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  text-align: center;
+}
+.totalScore1 {
+  position: absolute;
+  top: 15%;
+  left: 70%;
+  text-align: center;
+}
+
+/*** Current score ***/
+.currentScore {
+  width: 150px;
+  height: 150px;
+  background: #b34e4b;
+}
+.currentScore p {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+}
+.currentScore p:nth-child(2) {
+  font-size: 40px;
+}
+.currentScore0 {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+.currentScore1 {
+  position: absolute;
+  top: 40%;
+  right: 15%;
+}
+
+/*** Buttons ***/
+.middleText {
+  position: absolute;
+  top: 70%;
+  left: 40%;
+  text-align: center;
+  font-size: 25px;
+  color: #fff;
+}
+.btn {
+  border: 2px solid #ad4f34;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: #ad4f34;
+}
+.btn:hover {
+  border: 2px solid #d2263d;
+  background-color: #d2263d;
+}
+
+/*** Dice ***/
+.dice {
+  position: absolute;
+  top: 30%;
+  left: 41%;
+}
