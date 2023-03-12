@@ -68,7 +68,7 @@ document.querySelector(".saveScore").addEventListener("click", function () {
     document.querySelector("#totalScorePlayer-" + activePlayer).innerText =
       totalScore[activePlayer];
 
-    if (totalScore[activePlayer] >= 30) {
+    if (totalScore[activePlayer] >= 100) {
       document.querySelector("#name-" + activePlayer).innerText =
         "Congrats, you are winner!";
       playGame = false;
