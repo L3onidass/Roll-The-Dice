@@ -96,3 +96,12 @@
   top: 30%;
   left: 41%;
 }
+
+/*** Active marker***/
+.active {
+  color: #fff;
+  border: 2px solid #ad4f34;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background: #ad4f34;
+}
