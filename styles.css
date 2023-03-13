@@ -6,52 +6,91 @@
 
 /*** All page ***/
 .allPage {
-  background: linear-gradient(#b34e4b, #471f);
+  background-color: #fbfaf8;
   height: 100vh;
+  font-family: "Courier New", Courier, monospace;
 }
 
 /*** Playground***/
 .playGround {
+  display: flex;
+  justify-content: space-between;
   width: 80%;
   height: 80%;
-  background: #d1ccb4;
-  position: absolute;
+  background-image: url(images/Playground.jpg);
+  object-fit: fill;
+  background-position: center;
+  position: relative;
   top: 10%;
   left: 10%;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px #000;
+}
+.separateBox {
+  flex-basis: 39%;
+}
+.middleBox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-basis: 20%;
+}
+.rules {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -150px 0 0 -250px;
+  font-size: 20px;
+  text-align: justify;
+  background-color: #fbfaf8;
+  color: #000;
+  max-width: 500px;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px #fbfaf8;
+  z-index: 100;
 }
 
 /*** Total score ***/
 .totalScore {
-  font-size: 30px;
-  color: #471f1e;
+  font-size: 25px;
+  color: #fbfaf8;
   font-weight: bold;
 }
 .totalScore p:nth-last-of-type(2) {
-  font-size: 40px;
+  font-size: 20px;
   text-align: center;
 }
 .totalScore0 {
-  position: absolute;
-  top: 15%;
-  left: 10%;
+  margin: 100px 50px;
   text-align: center;
+  background-color: #000;
+  border-radius: 10px;
+  border: 2px solid #ffb100;
+  padding: 10px 10px;
 }
 .totalScore1 {
-  position: absolute;
-  top: 15%;
-  left: 70%;
+  margin: 100px 50px;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.901);
+  border-radius: 10px;
+  border: 2px solid #ffb100;
+  padding: 10px 10px;
 }
 
 /*** Current score ***/
 .currentScore {
   width: 150px;
   height: 150px;
-  background: #b34e4b;
+  background: #fbfaf8;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #fbfaf8;
 }
 .currentScore p {
   font-size: 20px;
-  color: #fff;
+  color: #000;
   text-align: center;
   padding-top: 20px;
 }
@@ -59,49 +98,64 @@
   font-size: 40px;
 }
 .currentScore0 {
-  position: absolute;
-  top: 40%;
-  left: 10%;
+  margin: 70px auto;
 }
 .currentScore1 {
-  position: absolute;
-  top: 40%;
-  right: 15%;
+  margin: 70px auto;
 }
 
 /*** Buttons ***/
 .middleText {
   position: absolute;
   top: 70%;
-  left: 40%;
   text-align: center;
   font-size: 25px;
   color: #fff;
 }
 .btn {
-  border: 2px solid #ad4f34;
+  width: 150px;
+  font-size: 20px;
+  color: #000;
+  border: 2px solid #000000;
+  background-color: transparent;
   padding: 5px 10px;
   border-radius: 10px;
   margin-bottom: 10px;
-  background-color: #ad4f34;
 }
 .btn:hover {
-  border: 2px solid #d2263d;
-  background-color: #d2263d;
+  color: #fbfaf8;
+  border: 2px solid #fff;
+  background-color: rgba(0, 0, 0, 0.905);
+  cursor: pointer;
 }
-
+.rulesButton {
+  width: 30px;
+  height: 30px;
+  line-height: 0.1px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fbfaf8;
+  padding: 5px 5px;
+  border-radius: 10px;
+  background: none;
+  cursor: pointer;
+}
+.rulesButton:hover {
+  color: #ffb100;
+}
 /*** Dice ***/
 .dice {
-  position: absolute;
-  top: 30%;
-  left: 41%;
+  margin: auto;
 }
 
 /*** Active marker***/
 .active {
-  color: #fff;
-  border: 2px solid #ad4f34;
-  padding: 5px 10px;
+  color: #fbfaf8;
+  border: 2px solid #ffb100;
+  padding: 10px 10px;
   border-radius: 10px;
-  background: #ad4f34;
+  box-shadow: 0px 0px 40px #ffb100;
 }

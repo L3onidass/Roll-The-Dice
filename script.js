@@ -1,7 +1,7 @@
 //document.querySelectorAll(".reset").innerText = 0;
 
 //***Variable definition***/
-let totalScore, roundScore, activePlayer, dice, playGame;
+let totalScore, roundScore, activePlayer, dice, playGame, clicked, showHide;
 
 //***Begining***/
 newStart();
@@ -14,7 +14,6 @@ function newStart() {
   roundScore = 0;
   activePlayer = 0;
   playGame = true;
-
   document.getElementById("totalScorePlayer-0").innerText = 0;
   document.getElementById("totalScorePlayer-1").innerText = 0;
   document.getElementById("currentScore-0").innerText = 0;
@@ -35,13 +34,25 @@ function nextPlayer() {
   document.getElementById("currentScore-0").innerText = 0;
   document.getElementById("currentScore-1").innerText = 0;
 }
+showHide = document.querySelector(".rules");
+clicked = false;
+
+document.querySelector(".clicked").addEventListener("click", function () {
+  if (clicked) {
+    showHide.style.display = "block";
+    clicked = false;
+  } else {
+    showHide.style.display = "none";
+    clicked = true;
+  }
+});
 
 //***Buttons setings***/
 
 //Btn. Roll dice
 document.querySelector(".rollDice").addEventListener("click", function () {
+  //Dice random number generator
   if (playGame) {
-    //Dice random number generator
     let dice = Math.ceil(Math.random() * 6);
 
     //Dice pictures
@@ -64,10 +75,8 @@ document.querySelector(".rollDice").addEventListener("click", function () {
 document.querySelector(".saveScore").addEventListener("click", function () {
   if (playGame) {
     totalScore[activePlayer] = totalScore[activePlayer] + roundScore;
-
     document.querySelector("#totalScorePlayer-" + activePlayer).innerText =
       totalScore[activePlayer];
-
     if (totalScore[activePlayer] >= 100) {
       document.querySelector("#name-" + activePlayer).innerText =
         "Congrats, you are winner!";

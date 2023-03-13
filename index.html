@@ -10,30 +10,48 @@
   <body>
     <div class="allPage">
       <div class="playGround">
-        <div class="totalScore totalScore0 active">
-          <p id="name-0">Score player one</p>
-          <p id="totalScorePlayer-0" class="reset">0</p>
-        </div>
-        <div class="totalScore totalScore1">
-          <p id="name-1">Score player two</p>
-          <p id="totalScorePlayer-1" class="reset">0</p>
+        <button class="rulesButton clicked">R</button>
+        <p class="rules ShowHide">
+          Welcome to the game Roll The Dice!<br /><br />
+          The rules are simple. Roll the dice and try to collect 100 points
+          before the opponent. If you roll 1, you will lose all current points
+          and turn. For secure collected current points against loss use save
+          score button, but you pass the game to the other player.<br /><br />
+          Press <strong>R</strong> button in the right corner to close the
+          window.<br /><br />
+          Wish you good luck and have a fun!
+        </p>
+        <div class="separateBox">
+          <div class="totalScore totalScore0 active">
+            <p id="name-0">Score player one</p>
+            <p id="totalScorePlayer-0" class="reset">0</p>
+          </div>
+          <div class="currentScore currentScore1">
+            <p>Current score</p>
+            <p id="currentScore-0" class="reset">0</p>
+          </div>
         </div>
 
-        <div class="currentScore currentScore0">
-          <p>Current score</p>
-          <p id="currentScore-0" class="reset">0</p>
+        <div class="middleBox">
+          <div class="dice">
+            <img src="images/1.jpg" alt="" class="diceImage" />
+          </div>
+          <div class="middleText">
+            <button class="btn rollDice">Roll dice</button>
+            <button class="btn saveScore">Save score</button>
+            <button class="btn newGame">New game</button>
+          </div>
         </div>
-        <div class="currentScore currentScore1">
-          <p>Current score</p>
-          <p id="currentScore-1" class="reset">0</p>
-        </div>
-        <div class="middleText">
-          <p class="btn rollDice">Roll dice</p>
-          <p class="btn saveScore">Save score</p>
-          <p class="btn newGame">New game</p>
-        </div>
-        <div class="dice">
-          <img src="images/1.jpg" alt="" class="diceImage" />
+
+        <div class="separateBox">
+          <div class="totalScore totalScore1">
+            <p id="name-1">Score player two</p>
+            <p id="totalScorePlayer-1" class="reset">0</p>
+          </div>
+          <div class="currentScore currentScore0">
+            <p>Current score</p>
+            <p id="currentScore-1" class="reset">0</p>
+          </div>
         </div>
       </div>
     </div>
