@@ -159,6 +159,7 @@
 /*** Dice ***/
 .dice {
   margin: auto;
+  box-shadow: 4px 4px 5px #000;
 }
 
 /*** Active marker***/
