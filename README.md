@@ -1,5 +1,5 @@
 # Roll-The-Dice
-Simple game for practise JS. My first game project sice I started with JS two months ago.
+Simple game for practise JS. My first game project sice I started with JS two months ago. Inspiration isn't mine.
 
 Name of the game is Roll The Dice!
 
