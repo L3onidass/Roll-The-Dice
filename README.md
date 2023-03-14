@@ -1,4 +1,4 @@
-# Rolling-The-Dice
+# Roll-The-Dice
 Simple game for practise JS. My first game project sice I started with JS two months ago.
 
 Name of the game is Roll The Dice!
