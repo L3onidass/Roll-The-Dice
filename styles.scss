@@ -1,0 +1,158 @@
+// *** GLOBAL SETINGS ***
+@import "partials/variables";
+@import "partials/mixins";
+
+* {
+  @include reset;
+}
+
+/*** All page ***/
+.allPage {
+  background: $secundaryColor;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/*** Playground***/
+.playGround {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 80%;
+  background-image: url(images/Playground.jpg);
+  object-fit: fill;
+  background-position: center;
+  position: relative;
+  top: 10%;
+  left: 10%;
+  border-radius: $radius;
+  box-shadow: 4px 4px 10px $darkerShadow;
+}
+.separateBox {
+  flex-basis: 39%;
+}
+.middleBox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-basis: 20%;
+}
+.rules {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -150px 0 0 -250px;
+  font-size: $smallerFont;
+  text-align: justify;
+  background-color: $lighterBackground;
+  color: $te;
+  max-width: 500px;
+  padding: 20px;
+  border: 1px solid $borderColor;
+  border-radius: $radius;
+  box-shadow: 4px 4px 10px $lighterShadow;
+  z-index: 100;
+}
+
+/*** Total score ***/
+.totalScore {
+  font-size: $biggerFont;
+  color: $lighterText;
+  font-weight: bold;
+  p:nth-last-of-type(2) {
+    font-size: $smallerFont;
+    text-align: center;
+  }
+}
+
+.totalScore0 {
+  @include totalScore;
+}
+.totalScore1 {
+  @extend .totalScore0;
+}
+
+/*** Current score ***/
+.currentScore {
+  width: 150px;
+  height: 150px;
+  background: $lighterBackground;
+  border-radius: $radius;
+  box-shadow: 2px 2px 5px $lighterShadow;
+  p {
+    font-size: $smallerFont;
+    color: $borderColor;
+    text-align: center;
+    padding-top: 20px;
+    &:nth-child(2) {
+      font-size: 40px;
+    }
+  }
+  .currentScore0 {
+    @include curentScore;
+  }
+  .currentScore1 {
+    @extend .currentScore0;
+  }
+}
+
+/*** Dice ***/
+.dice {
+  margin: auto;
+  box-shadow: 4px 4px 5px $darkerShadow;
+}
+
+/*** Buttons ***/
+
+.middleText {
+  position: absolute;
+  top: 70%;
+  text-align: center;
+  font-size: $biggerFont;
+  color: $lighterText;
+}
+
+.rulesButton {
+  width: 30px;
+  height: 30px;
+  line-height: 0.1px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: $smallerFont;
+  font-weight: bold;
+  color: $lighterText;
+  padding: 5px 5px;
+  border-radius: $radius;
+  background: none;
+  cursor: pointer;
+  &:hover {
+    color: $mainColor;
+  }
+}
+
+.btn {
+  width: 150px;
+  font-size: $smallerFont;
+  color: $darkerText;
+  border: 2px solid $borderColor;
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: $radius;
+  margin-bottom: 10px;
+  &:hover {
+    color: $lighterText;
+    border: 2px solid $lighterText;
+    background-color: $darkerBackground;
+    cursor: pointer;
+  }
+}
+
+/*** Active marker***/
+.active {
+  color: $lighterText;
+  border: 2px solid $mainColor;
+  padding: 10px 10px;
+  border-radius: $radius;
+  box-shadow: 0px 0px 40px $mainColor;
+}

@@ -1,0 +1,18 @@
+@mixin reset {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin totalScore {
+  margin: 100px 50px;
+  text-align: center;
+  background-color: $darkerBackground;
+  border-radius: $radius;
+  border: 2px solid $mainColor;
+  padding: 10px 10px;
+}
+
+@mixin curentScore {
+  margin: 70px auto;
+}

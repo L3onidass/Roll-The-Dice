@@ -6,12 +6,7 @@
 
 /*** All page ***/
 .allPage {
-  background: #ece9e6; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #ffffff,
-    #ece9e6
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: #ece9e6; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
     #ffffff,
@@ -28,23 +23,27 @@
   width: 80%;
   height: 80%;
   background-image: url(images/Playground.jpg);
+  -o-object-fit: fill;
   object-fit: fill;
   background-position: center;
   position: relative;
   top: 10%;
   left: 10%;
   border-radius: 10px;
-  box-shadow: 4px 4px 10px #000;
+  box-shadow: 4px 4px 10px #0d0d0d;
 }
+
 .separateBox {
   flex-basis: 39%;
 }
+
 .middleBox {
   position: relative;
   display: flex;
   justify-content: center;
   flex-basis: 20%;
 }
+
 .rules {
   display: block;
   position: absolute;
@@ -69,22 +68,17 @@
   color: #fbfaf8;
   font-weight: bold;
 }
+
 .totalScore p:nth-last-of-type(2) {
   font-size: 20px;
   text-align: center;
 }
-.totalScore0 {
-  margin: 100px 50px;
-  text-align: center;
-  background-color: #000;
-  border-radius: 10px;
-  border: 2px solid #ffb100;
-  padding: 10px 10px;
-}
+
+.totalScore0,
 .totalScore1 {
   margin: 100px 50px;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.901);
+  background-color: rgba(0, 0, 0, 0.9);
   border-radius: 10px;
   border: 2px solid #ffb100;
   padding: 10px 10px;
@@ -107,11 +101,16 @@
 .currentScore p:nth-child(2) {
   font-size: 40px;
 }
-.currentScore0 {
-  margin: 70px auto;
-}
+
+.currentScore0,
 .currentScore1 {
   margin: 70px auto;
+}
+
+/*** Dice ***/
+.dice {
+  margin: auto;
+  box-shadow: 4px 4px 5px #000;
 }
 
 /*** Buttons ***/
@@ -122,22 +121,7 @@
   font-size: 25px;
   color: #fff;
 }
-.btn {
-  width: 150px;
-  font-size: 20px;
-  color: #000;
-  border: 2px solid #000000;
-  background-color: transparent;
-  padding: 5px 10px;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-.btn:hover {
-  color: #fbfaf8;
-  border: 2px solid #fff;
-  background-color: rgba(0, 0, 0, 0.905);
-  cursor: pointer;
-}
+
 .rulesButton {
   width: 30px;
   height: 30px;
@@ -153,13 +137,27 @@
   background: none;
   cursor: pointer;
 }
+
 .rulesButton:hover {
   color: #ffb100;
 }
-/*** Dice ***/
-.dice {
-  margin: auto;
-  box-shadow: 4px 4px 5px #000;
+
+.btn {
+  width: 150px;
+  font-size: 20px;
+  color: #000;
+  border: 2px solid #000000;
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.btn:hover {
+  color: #fbfaf8;
+  border: 2px solid #fff;
+  background-color: rgba(0, 0, 0, 0.905);
+  cursor: pointer;
 }
 
 /*** Active marker***/
@@ -169,4 +167,4 @@
   padding: 10px 10px;
   border-radius: 10px;
   box-shadow: 0px 0px 40px #ffb100;
-}
+} /*# sourceMappingURL=styles.css.map */
